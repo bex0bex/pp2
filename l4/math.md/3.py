@@ -1,8 +1,7 @@
 import math
-num = float(input("Number of sides: "))
-length = float(input("The length of side: "))
-angle = 360/num
-angle_another = (180 - angle)/2
+num_sides = int(input("Input number of sides: "))
+side_length = float(input("Input the length of a side: "))
 
+area = (num_sides * (side_length ** 2)) / (4 * math.tan(math.pi / num_sides))
 
-area = 
+print("The area of the polygon is:", round(area, 2))

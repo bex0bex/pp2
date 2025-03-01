@@ -1,4 +1,9 @@
 import re
 
-def match_ab_two_to_three(s):
-    return bool(re.fullmatch(r'^ab{2,3}$', s))
+a = r'^ab{2,3}$'
+b = input().split()
+
+for i in b:
+    if re.fullmatch(a, i):
+        print("true")
+    else: print("false")

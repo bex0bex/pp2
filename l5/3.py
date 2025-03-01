@@ -1,4 +1,8 @@
 import re
 
-def find_lowercase_with_underscore(s):
-    return re.findall(r'\b[a-z]+_[a-z]+\b', s)
+
+pattern = r'\b[a-z]+_[a-z]+\b'
+text = input("Enter text: ")
+
+matches = re.findall(pattern, text)
+print("Matches:", matches)

@@ -1,3 +1,6 @@
 import re
-def find_upper_followed_by_lower(s):
-    return re.findall(r'\b[A-Z][a-z]+\b', s)
+pattern = r'\b[A-Z][a-z]+\b'
+text = input("Enter text: ")
+
+matches = re.findall(pattern, text)
+print("Matches:", matches)
